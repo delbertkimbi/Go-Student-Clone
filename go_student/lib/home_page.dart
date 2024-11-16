@@ -45,12 +45,12 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(12.0),
+      body: const Padding(
+        padding:  EdgeInsets.all(12.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Card(
+             Card(
               color: Colors.white,
               elevation: 0.5,
               child: Row(
@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            const SizedBox(
+           SizedBox(
               height: 20,
             ),
             Row(
@@ -113,7 +113,7 @@ class _HomePageState extends State<HomePage> {
                 MyBox(icon: Icons.home, name: 'Home'),
               ],
             ),
-           const  SizedBox(
+           SizedBox(
               height: 10,
             ),
             Row(
@@ -141,9 +141,9 @@ class _HomePageState extends State<HomePage> {
 }
 
 class MyBox extends StatelessWidget {
-  IconData icon;
-  String name;
-  MyBox({super.key, required this.icon, required this.name});
+  final IconData icon;
+  final String name;
+  const MyBox({super.key, required this.icon, required this.name});
 
   @override
   Widget build(BuildContext context) {
